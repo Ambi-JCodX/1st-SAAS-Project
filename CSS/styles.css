@@ -1,0 +1,128 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: var(--size-20);
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  z-index: 500;
+}
+
+[aria-controls="navbarDropdown"] {
+  display: none;
+}
+
+.logo-brand { width: var(--size-150); }
+
+.nav-link { 
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.list-link a { color: var(--font-color-base); }
+
+.nav-link .buy-now {
+  color: var(--White);
+  padding: var(--size-12) var(--size-20);
+  font-size: var(--size-12);
+  font-weight: 600;
+}
+
+.bg-header {
+  background-image: url(/assets/backgrounds/background-top.svg);
+  padding-top: var(--size-150);
+}
+
+.bg-header .container {
+  display: flex;
+  justify-content: space-around;
+  gap: 17.875rem;
+}
+
+.header-info { margin-top: var(--size-50); }
+
+.header-info h2 { margin-bottom: var(--size-10); }
+
+.header-info a.play {
+  padding: var(--size-10) var(--size-16);
+  margin-right: var(--size-20);
+}
+
+.header-info a.learn-more { 
+  color: rgb(49, 114, 255);
+  font-size: var(--size-14);
+  font-weight: 600;
+}
+
+.header-info a.learn-more i {
+  font-size: var(--size-10);
+  font-weight: 900;
+}
+
+.logo-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 30.5rem;
+  height: 30.5rem;
+}
+
+.icon-wrapper {
+  width: 5.75rem;
+  height: 5.75rem;
+  padding: var(--size-20);
+  border-radius: 50%;
+  background-color: var(--White);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.429);
+}
+
+.icon-wrapper.goo {
+  width: 3.75rem;
+  height: 3.75rem;
+  padding: var(--size-10);
+}
+
+.logo-icons .atla { align-self: end; }
+
+.icon-wrapper.asa {
+  width: 4.75rem;
+  height: 4.75rem;
+  padding: var(--size-12);
+}
+.logo-icons .asa {
+  justify-self: flex-end;
+  align-self: center;
+}
+
+.icon-wrapper.payp {
+  width: 4.75rem;
+  height: 4.75rem;
+  padding: var(--size-12);
+}
+.logo-icons .payp { align-self: center; }
+
+.logo-icons .wea {
+  justify-self: flex-end;
+  align-self: center;
+}
+
+.icon-wrapper.goo-A {
+  width: 4rem;
+  height: 4rem;
+  padding: 0.3125rem;
+}
+
+.logo-icons .goo-A {
+  grid-row: 3 / 4;
+  justify-self: flex-end;
+}
+
+.logo-icons .cale {
+  grid-column: 3 / 4;
+  grid-row: 3 /4;
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+
