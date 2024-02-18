@@ -58,7 +58,8 @@
 }
 
 .learn-more i,
-.block-text i {
+.block-text i,
+.btn i {
   font-size: var(--size-10);
   font-weight: 900;
 }
@@ -155,7 +156,7 @@
   justify-self: center;
 }
 
-.cards .card-img { width: var(--size-50); }
+.img-wrapper { width: var(--size-50); }
 
 .wrapper-sketch {
   display: flex;
@@ -195,6 +196,9 @@
   justify-content: center;
 }
 
+.icon-text:first-child .bef-circ-aft::before,
+.icon-text:last-child .bef-circ-aft::after{ background-color: transparent; }
+
 .bef-circ-aft {
   display: flex;
   align-items: center;
@@ -230,7 +234,26 @@
 text-align: center;
 }
 
-.banner-2 { margin-bottom: var(--size-100); }
+
+.video-banner {
+  margin-bottom: var(--size-100);
+  position: relative;
+}
+
+.video-banner a {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  background-color: #f6f6f6;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(59, 57, 57, 0.45);
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+  position: absolute;
+  top: 45%;
+  right: 45%;
+}
 
 article.hubspot {
   display: flex;
@@ -271,6 +294,8 @@ article.hubspot {
   margin-bottom: var(--size-50);
 }
 
+.World-company { margin-bottom: var(--size-100); }
+
 .World-company h2 {
   font-size: var(--size-20);
   text-transform: uppercase;
@@ -287,3 +312,36 @@ article.hubspot {
 }
 
 .World-company .company-logo-wrapper { width: var(--size-150); }
+
+#pricing .plan-container {
+  box-shadow: 0px 8px 20px rgba(61, 60, 60, 0.241);
+  padding: var(--size-30) var(--size-50);
+}
+
+.plan-container .price span {
+  color: var(--font-color-base);
+  font-size: var(--size-30);
+}
+
+.plan-container .price h2 { word-spacing: -5px; }
+
+.plan-container div:first-child { margin-bottom: var(--size-20); }
+
+.plan-container .price-btn {
+  padding: var(--size-10) var(--size-30);
+  margin-bottom: var(--size-10);
+}
+
+#pricing .subscription {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: var(--size-40);
+  margin-top: var(--size-50);
+}
+
+.service-included {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.service-included > div { padding: var(--size-30); }
