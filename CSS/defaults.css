@@ -4,12 +4,12 @@
   --font-color-base: #666;
   --font-color-dark: #212529;
   --font-color-light: #b0aebe;
-  --color-blue-btn: #3a67fb;
-  --bg-dark-blue :#1f2a51;;
+  --color-blue-btn:#2476FF;
+  --bg-dark-blue:#20335B;
   --font-color-link: #57A6ff;
   --footer: #ecececbd;
   --contrast: rgb(225, 222, 240);
-  --sketch-green:#58d5ab;
+  --sketch-green:#01C9A7;
   --success: #64ECF5;
   --danger: #FF8B8D;
   --grad-1: #a1ecff;
@@ -72,6 +72,11 @@ img {
   border-style: none;
 }
 
+section {
+  margin-top: var(--size-150);
+  margin-bottom: var(--size-100);
+}
+
 .container {
   width: 100%;
   padding-left: var(--size-30);
@@ -79,6 +84,8 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
+.block-text { text-align: center; }
 
 .btn {
   display: inline-block;
@@ -95,5 +102,7 @@ img {
 }
 
 @media screen and ( min-width: 1220px) {
-  .container {max-width: 1140px;}
+  .container { max-width: 1140px; }
+
+  .hireUs-wrapper { max-width: 974px; }
 }
