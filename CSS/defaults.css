@@ -105,6 +105,7 @@ section {
   box-shadow: 0px 7px 15px #57a5ff7c;
 }
 
+
 @media screen and ( min-width: 1220px) {
   .container { max-width: 1140px; }
 
@@ -116,3 +117,4 @@ section {
     margin-left: auto;
   }
 }
+

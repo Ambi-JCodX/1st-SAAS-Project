@@ -1,0 +1,56 @@
+@media screen and (max-width: 769px) {
+ [aria-controls="navbarDropdown"] {
+  display: block;
+ }
+
+ [aria-expanded="false"] ~ ul {
+  display: none;
+ }
+
+ [aria-expanded="true"] ~ ul {
+  display: flex;
+ }
+
+ .bg-header {
+  padding-top: inherit;
+ }
+
+ .bg-header .container {
+  text-align: center;
+ }
+
+ article.hubspot {
+  flex-wrap: wrap;
+  margin-bottom:0;
+ }
+
+ .hubspot .block-text {
+  text-align: center;
+ }
+
+ .hubspot .block-text .hub-logo {
+  margin-top: var(--size-20);
+  margin-right: auto;
+  margin-left: auto;
+ }
+
+ .hireUs-wrapper {
+  flex-wrap: wrap;
+  gap: var(--size-20);
+ }
+
+ .hireUs-wrapper .block-text {
+  display: flex;
+  gap: var(--size-10);
+  padding: 0 var(--size-20);
+ }
+
+ .footer-top-container {
+  flex-wrap: wrap;
+ }
+
+ .footer-top-container > div:first-child {
+  margin-right: auto;
+  margin-left: auto;
+ }
+}
