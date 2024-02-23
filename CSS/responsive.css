@@ -8,15 +8,45 @@
  }
 
  [aria-expanded="true"] ~ ul {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-content: center;
+  padding: 0 var(--size-100);
+  gap: var(--size-50) 0;
+  text-align: center;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 21.875rem;
+  top: 4.0625rem;
+  left: 0;
  }
 
- .bg-header {
-  padding-top: inherit;
+ [aria-expanded="true"] ~ ul li:last-child {
+  grid-column: 3 / 4;
  }
+
+ .navbar {
+  background-color: var(--White);
+  border-bottom: 1px solid var(--footer);
+}
+
+ .bg-header { padding-top: inherit; }
 
  .bg-header .container {
   text-align: center;
+  flex-wrap: wrap;
+ }
+
+ .software-for-people {
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 0;
+ }
+
+ .software-for-people .block-text {
+  text-align: center;
+  padding: var(--size-20);
  }
 
  article.hubspot {
@@ -24,14 +54,16 @@
   margin-bottom:0;
  }
 
- .hubspot .block-text {
-  text-align: center;
- }
+ .hubspot .block-text { text-align: center; }
 
  .hubspot .block-text .hub-logo {
   margin-top: var(--size-20);
   margin-right: auto;
   margin-left: auto;
+ }
+
+  .subscription .plans {
+  text-align: center;
  }
 
  .hireUs-wrapper {
@@ -45,12 +77,138 @@
   padding: 0 var(--size-20);
  }
 
- .footer-top-container {
-  flex-wrap: wrap;
- }
+ .footer-top-container { flex-wrap: wrap; }
 
  .footer-top-container > div:first-child {
   margin-right: auto;
   margin-left: auto;
  }
+}
+
+@media screen and (max-width: 414px) {
+  [aria-expanded="true"] ~ ul {
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    padding: 0;
+    gap: var(--size-20);
+   }
+
+  .header-info {
+    margin-top: var(--size-50);
+  }
+
+  .header-info h2 {
+    font-size: var(--size-40);
+  }
+
+  .benefits-cards .cards {
+    width: 100%;
+  }
+
+  .software-for-people .block-text  {
+    padding: var(--size-10);
+  }
+
+  .software-for-people .block-text h2 {
+    font-size: var(--size-20);
+  }
+
+  .circle-text-wrapper {
+    display: block;
+    margin: var(--size-30) 0;
+  }
+
+  .icon-text {
+    display: flex;
+    align-items: center;
+    justify-content: inherit;
+    gap: var(--size-10);
+  }
+
+  .video-banner a {
+    top: 30%;
+    right: 40%;
+  }
+
+  article.hubspot {
+    margin-top: 0;
+    display: block;
+  }
+
+  .woman-dots {
+    margin-bottom: var(--size-50);
+  }
+
+  .woman-dots .woman {
+    width: 20rem;
+    top: -0.625rem;
+    left: 0;
+  }
+
+  .woman-dots .abstracts-dots {
+    width: 13.5rem;
+    margin-right: 0;
+  }
+
+  .World-company .company-logo {
+    align-items: center;
+    flex-direction: column;
+    gap: var(--size-20);
+  }
+
+  #pricing .subscription,
+  .subscription .service-included {
+    grid-template-columns: inherit;
+    gap: var(--size-20);
+  }
+
+  .hireUs-wrapper {
+    padding: var(--size-20) 0;
+  }
+
+  .hireUs-wrapper .block-text {
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+  }
+
+  .block-text .underline {
+    margin-right: 0;
+  }
+
+  .hireUs-wrapper .box-form {
+    padding: var(--size-20);
+  }
+
+  .box-form .box-input {
+    grid-template-columns: inherit;
+    gap: 0;
+  }
+
+  .footer-top .logo-brand {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .footer-top-container {
+    text-align: center;
+  }
+
+
+  .footer-top-container > div:last-child {
+    display: grid;
+    justify-content: center;
+    gap: var(--size-20);
+  }
+
+  .footer-top ul li {
+    line-height: var(--size-30);
+  }
+
+  .footer-bottom .terms-socialLink {
+    flex-direction: column;
+    gap: var(--size-30);
+  }
+
 }

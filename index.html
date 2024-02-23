@@ -48,7 +48,7 @@
     <div class="container">
       <div class="header-info">
         <h2>
-          Empowering <br> teams with the <br> freedom
+          Empowering <br> teams with the freedom
         </h2>
         <p>Own the unlimited power of the web development</p>
         <div>
@@ -143,7 +143,7 @@
         </div>
         <article class="software-for-people">
           <div class="block-text">
-            <h2>Front makes you look at <br>things from a different perspectives</h2>
+            <h2>Front makes you look at things from a different perspectives</h2>
             <a class="btn" href="#">Get Started <i class="fa-solid fa-chevron-right"></i></a>
           </div>
           <div class="banner-1">
@@ -681,7 +681,7 @@
             </ul>
           </div>
           <div>
-            <div>
+            <div class="footer-top-link">
               <h3>Company</h3>
               <ul>
                 <li><a href="#">About</a></li>
@@ -696,7 +696,7 @@
                 <li><a href="#">Hire Us</a></li>
               </ul>
             </div>
-            <div>
+            <div class="footer-top-link">
               <h3>Features</h3>
               <ul>
                 <li><a href="#">Press</a></li>
@@ -705,7 +705,7 @@
                 <li><a href="#">Pricing</a></li>
               </ul>
             </div>
-            <div>
+            <div class="footer-top-link">
               <h3>Documentation</h3>
               <ul>
                 <li><a href="#">Support</a></li>
@@ -715,7 +715,7 @@
                 <li><a href="#">Tech Requirements</a></li>
               </ul>
             </div>
-            <div>
+            <div class="footer-top-link">
               <h3>Resources</h3>
               <ul>
                 <li><i class="fa-solid fa-circle-info"></i><a href="#"> Help</a></li>
@@ -772,8 +772,30 @@
         </div>
       </div>
     </div>
-    
   </footer>
+
+
+  <script>
+    const nav = document.getElementById("topNav");
+    window.onscroll = function () {
+      if (window.pageYOffset > 100) {
+        nav.classList.add("sticky");
+      } else {
+        nav.classList.remove("sticky");
+      }
+    }
+
+
+
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({ target }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+  </script>
   
 </body>
 </html>
