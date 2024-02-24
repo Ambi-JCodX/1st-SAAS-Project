@@ -217,6 +217,15 @@
   text-align: start;
 }
 
+.pulse:hover {
+  animation: pulse infinite 1s;
+}
+
+@keyframes pulse {
+  0%, 100% {transform: scale(1);}
+  50% {transform: scale(0.9);}
+}
+
 .circle-text-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
